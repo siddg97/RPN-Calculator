@@ -127,3 +127,33 @@ Main> calc "4 1 -"
 Main> calc "4 1 swap -"
 > "-3" 
 ```
+
+## Some examples:
+```haskell
+Main> calc "1 2 + 3 *"
+> "9.0"
+
+Main> calc "1 2 3 * +"
+> "7.0"
+
+Main> calc "2 sqrt 3 sqrt +"
+> "3.1462643699419726"
+
+Main> calc "11 dup *"
+> "121.0"
+
+Main> calc "0 5 /"
+> "0.0"
+
+Main> calc "5 0 /"
+> "Infinity"
+
+Main> calc "2 3 + 4 2 +all"
+> "11.0"
+
+Main> calc "2 3 + 4 2 *all"
+> "40.0"
+
+Main> calc "3.2 sin dup * 3.2 cos dup * +"
+> "1.0"
+```
